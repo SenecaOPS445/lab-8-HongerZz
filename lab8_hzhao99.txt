@@ -1,0 +1,34 @@
+
+PLAY [vmlab] *******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [update apache] ***********************************************************
+ok: [vmlab]
+
+TASK [remove tree] *************************************************************
+changed: [vmlab]
+
+TASK [set hostname to SenecaID] ************************************************
+ok: [vmlab]
+
+TASK [create user Seneca_ID with sudo access] **********************************
+ok: [vmlab]
+
+TASK [add public matrix account public key] ************************************
+ok: [vmlab]
+
+TASK [create directory structure] **********************************************
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab1)
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab2)
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab3)
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab4)
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab5)
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab6)
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab7)
+ok: [vmlab] => (item=/home/hzhao99/ops445/lab8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
